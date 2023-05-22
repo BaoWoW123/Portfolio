@@ -1,0 +1,11 @@
+.Navbar {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    text-align: center;
+    padding: 2vh 0vw;
+}
+
+.navbarBtns{
+    display: flex;
+    justify-content: space-evenly;
+}
