@@ -1,13 +1,13 @@
 html,body {
     color: black;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: auto;
     padding: 0;
     height: 100%;
     box-sizing: border-box;
-    background: #eeeee7;
+    background: linear-gradient(to top left, white, #9180c3);
+    background-attachment: fixed;
 }
 button {
     border: none;
@@ -16,10 +16,10 @@ button {
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
+    padding: 0px;
 }
 
 .App {
-    border: 2px solid red; /* TEMPORARY visual of app size */
 
 }
 

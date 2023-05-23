@@ -9,3 +9,25 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+button div {
+    border-bottom: 1px solid transparent;
+}
+
+button div:hover {
+    animation: active .5s ease forwards;
+}
+.active {
+    border-bottom: 1px solid black;
+
+}
+@keyframes active {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+}

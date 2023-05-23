@@ -5,7 +5,6 @@ const Projects = () => {
 
     return (
         <div className="Projects">
-            <Navbar/>
             Projects
         </div>
     )
