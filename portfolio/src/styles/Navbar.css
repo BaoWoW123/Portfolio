@@ -1,33 +1,55 @@
 .Navbar {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    text-align: center;
-    padding: 2vh 0vw;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  text-align: center;
+  padding-top: 2vh;
+  position: sticky;
+  top: 0;
+  gap: 3vh 0px;
+  z-index: 1;
+  opacity: 0;
+  animation: load 2s ease 3s forwards;
 }
 
-.navbarBtns{
-    display: flex;
-    justify-content: space-evenly;
+.navbarBtns {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
 }
 
 button div {
-    border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 button div:hover {
-    animation: active .5s ease forwards;
+  animation: active 0.3s ease forwards;
 }
 .active {
-    border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+}
+.progressWrapper {
+  grid-column: 1/3;
+  background-color: white;
+}
 
+.progress {
+  background-color: black;
+  width: 0;
+  padding-top: 3px;
 }
 @keyframes active {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-        border-bottom: 1px solid black;
-    }
+  0% {
+    width: 0%;
+    border-bottom: 2px solid black;
+  }
+  100% {
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+}
 
+@keyframes load {
+    to {
+        opacity: 1;
+    }
 }
