@@ -1,5 +1,3 @@
-import Navbar from "./Navbar";
-
 
 const Projects = () => {
 

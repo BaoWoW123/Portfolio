@@ -13,7 +13,18 @@ html,body {
 ::-webkit-scrollbar {
     display:none;
 }
+a {
+    text-decoration: inherit;
+    color: none;
+    display: inline-block;
+}
+a:visited {
+    color: inherit;
+}
 
+h1, h2,h3 {
+    margin: 0;
+}
 ul {
     margin: 0;
     text-decoration: none;
