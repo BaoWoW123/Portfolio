@@ -9,8 +9,10 @@ import webpack from "../assets/logos/webpack.png";
 import npm from "../assets/logos/npm.png";
 import tailwind from "../assets/logos/tailwind.png";
 import avatar from "../assets/avatar.png";
+import imgArray from "./images";
 
 const Home = (props) => {
+
   return (
     <div className="Home">
       <div className="homeMain">
@@ -36,7 +38,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="homeContent">
-        <div>Home Content Here</div>
+        <div><h1>Skillset</h1></div>
         <ul className="skillSet">
           <li>
             <img src={react} />
@@ -78,10 +80,16 @@ const Home = (props) => {
                 a BaaS (Firebase) to store app data.
               </p>
             </div>
-            <img src={avatar}/>
+            <div className="imgContainer">
+              <img src={imgArray[0]} />
+              <img src={imgArray[1]} />
+            </div>
           </li>
           <li>
-            <img src={avatar}/>
+            <div className="imgContainer">
+            <img src={imgArray[2]}/> 
+            <img src={imgArray[3]}/> 
+            </div>
             <div>
               <a href="https://shop-bc80d.web.app/">
                 <b>Shop</b>
@@ -103,10 +111,16 @@ const Home = (props) => {
                 knight(from popular game Chess) to move to a given square.
               </p>
             </div>
-            <img src={avatar}/>
+            <div className="imgContainer">
+              <img src={imgArray[4]} /> 
+              <img src={imgArray[5]}/>
+            </div>
           </li>
           <li>
-            <img src={avatar}/>
+            <div className="imgContainer">
+              <img src={imgArray[6]}/>
+              <img src={imgArray[7]}/>
+            </div>
             <div>
               <a href="https://whereswaldo-29041.web.app/">
                 <b>Where's Waldo</b>
