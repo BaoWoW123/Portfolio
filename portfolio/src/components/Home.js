@@ -13,8 +13,29 @@ import css from "../assets/logos/css.png";
 import firebase from "../assets/logos/firebase.png";
 import avatar from "../assets/avatar.png";
 import imgArray from "./images";
+import { useEffect } from "react";
 
 const Home = (props) => {
+  useEffect(() => {
+    const contact = document.querySelector(".contact");
+    const borderLines = document.querySelectorAll('.borderLine')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            borderLines.forEach(el => {
+                el.className = 'borderLineActive'
+            })
+        } else {
+            borderLines.forEach(el => {
+                el.className = 'borderLine'
+            })
+        }
+      });
+    });
+
+    observer.observe(contact);
+  }, []);
+
   return (
     <div className="Home">
       <div className="homeMain">
@@ -144,9 +165,9 @@ const Home = (props) => {
                 <h3>Shop</h3>
               </a>
               <p>
-                A modern climbing e-commerce platform for users to purchase a variety of
-                products. The shop features a cart for users to check out their
-                personalized items as well as item catergories.
+                A modern climbing e-commerce platform for users to purchase a
+                variety of products. The shop features a cart for users to check
+                out their personalized items as well as item catergories.
               </p>
               <ul>
                 <li>TDD</li>
@@ -208,8 +229,35 @@ const Home = (props) => {
           </button>
         </ul>
       </div>
+      <div className="contact">
+        <h1><span>Contact</span></h1>
+        <form>
+        <div>Need to reach me or have a question? Feel free to message me!</div>
+        <div style={{display:'flex',gap:'40px', width:'50%'}}>
+            <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Contact Info" /></div>
+          <textarea
+            maxLength={400}
+            placeholder='Write a message...'
+          ></textarea>
+          <button type="button" className="contactBtn">
+            Send message
+          </button>
+        </form>
+        <span className="borderLine"></span>
+        <span className="borderLine"></span>
+        <span className="borderLine"></span>
+        <span className="borderLine"></span>
+        <span className="borderLine"></span>
+      </div>
     </div>
   );
 };
 
 export default Home;
+
+
+
+        <form className="contactForm">
+          
+        </form>

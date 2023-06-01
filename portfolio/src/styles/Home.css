@@ -1,7 +1,9 @@
 .Home {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    gap: 50px;
+    position: relative;
 }
 
 .homeMain{
@@ -11,7 +13,6 @@
     justify-content: flex-end;
     height: 85vh;
     gap: 10vh;
-    padding-bottom: 6vh;
 }
 
 .homeTitle {
@@ -227,12 +228,12 @@
     box-sizing: border-box;
 }
 
-.project a h3, .projects button {
+.project a h3, .projects button, .contactBtn {
     opacity: .8;
     transition: .1s ease-out;
 }
 
-.project a h3:hover, .projects button:hover {
+.project a h3:hover, .projects button:hover, .contactBtn:hover{
     transform: scale(1.1);
     opacity: 1;
     cursor: pointer;
@@ -248,6 +249,109 @@
     margin: auto;
 }
 
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    position: relative;
+    width: 60%;
+    padding: 20px 0px;
+    align-self: center;
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 50%;
+    font-size: 25px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+form input:focus, textarea:focus {
+    transform: scale(1.1);
+}
+
+form input {
+    padding:10px;
+}
+
+form textarea {
+    height: 10vh;
+    resize: none;
+    padding: 10px;
+}
+.contactBtn {
+    padding: 10px 20px;
+}
+
+.borderLineActive {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    transform-origin: center;
+}
+/* top */
+.borderLineActive:nth-child(3) { 
+    transform: scale(0);
+    top:0;
+    border-top: 3px solid black;
+    animation: expandFromCenter .8s ease-out forwards;
+}
+ /* left*/
+.borderLineActive:nth-child(4) {
+    height: 0;
+    top: 0;
+    border-left: 3px solid black;
+    animation: createBorderY .4s ease-out .8s forwards;
+}
+ /*botR*/
+.borderLineActive:nth-child(5) {
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 3px solid black;
+    animation: createBorderX 2s ease-out 1.2s forwards;
+}
+ /*botL*/
+.borderLineActive:nth-child(7) {
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid black;
+    animation: createBorderX 2s ease-out 1.2s forwards;
+}
+ /*right*/
+.borderLineActive:nth-child(6) {
+    top: 0;
+    height: 0;
+    border-right: 3px solid black;
+    animation: createBorderY .4s ease-out .8s forwards;
+}
+
+@keyframes expandFromCenter {
+    from {
+        width: 0%;
+    }
+    to {
+        transform: scale(1);
+    }
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
