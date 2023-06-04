@@ -131,7 +131,7 @@ const Home = (props) => {
         </div>
         <ul className="projects">
           <h1>Projects</h1>
-          <li className="project">
+          <li className="homeProject">
             <div>
               <a href="https://instagramclone-f3e9c.web.app/">
                 <h3>Itstagram</h3>
@@ -146,19 +146,19 @@ const Home = (props) => {
                 <li>React</li>
                 <li>JavaScript, HTML, & CSS</li>
                 <li>Google Firebase (NoSQL database)</li>
-                <li>Third party libraries integration</li>
+                <li>Third party-libraries integration</li>
                 <li>Test driven development (TDD)</li>
               </ul>
             </div>
             <div className="imgContainer">
-              <img src={imgArray[0]} />
-              <img src={imgArray[1]} />
+              <img src={imgArray[0]} alt='Instagram Clone 1'/>
+              <img src={imgArray[1]} alt='Instagram Clone 2'/>
             </div>
           </li>
-          <li className="project">
+          <li className="homeProject">
             <div className="imgContainer">
-              <img src={imgArray[2]} />
-              <img src={imgArray[3]} />
+              <img src={imgArray[2]} alt='Shop 1'/>
+              <img src={imgArray[3]} alt='Shop 2'/>
             </div>
             <div>
               <a href="https://shop-bc80d.web.app/">
@@ -177,7 +177,7 @@ const Home = (props) => {
               </ul>
             </div>
           </li>
-          <li className="project">
+          <li className="homeProject">
             <div>
               <a href="https://knight-travails.web.app/">
                 <h3>Knight Travails</h3>
@@ -198,14 +198,14 @@ const Home = (props) => {
               </ul>
             </div>
             <div className="imgContainer">
-              <img src={imgArray[4]} />
-              <img src={imgArray[5]} />
+              <img src={imgArray[4]} alt='Knight Travails 1'/>
+              <img src={imgArray[5]} alt='Knight Travails 2'/>
             </div>
           </li>
-          <li className="project">
+          <li className="homeProject">
             <div className="imgContainer">
-              <img src={imgArray[6]} />
-              <img src={imgArray[7]} />
+              <img src={imgArray[6]} alt="Where's Waldo 1"/>
+              <img src={imgArray[7]} alt="Where's Waldo 2"/>
             </div>
             <div>
               <a href="https://whereswaldo-29041.web.app/">
@@ -242,6 +242,7 @@ const Home = (props) => {
           ></textarea>
           <button type="button" className="contactBtn">
             Send message
+            <div></div>
           </button>
         </form>
         <span className="borderLine"></span>

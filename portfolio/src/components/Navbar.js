@@ -1,9 +1,12 @@
 import "../styles/Navbar.css";
+import github from '../assets/logos/github.png'
 const Navbar = (props) => {
 
   return (
     <div className="Navbar">
-      <div>Picture Here</div>
+      <a href="https://github.com/BaoWoW123">
+      <img src={github}/>
+        </a>
       <div className="navbarBtns">
         <button type="button" onClick={(e) => props.reroute(e, 'home')}>
           <div>Home</div>

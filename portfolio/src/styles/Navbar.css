@@ -1,27 +1,39 @@
 .Navbar {
   display: grid;
-  grid-template-columns: 5fr 4fr;
   text-align: center;
-  padding-top: 2vh;
   position: sticky;
   top: 0;
-  gap: 3vh 0px;
   z-index: 1;
   opacity: 0;
   animation: load 2s ease 3s forwards;
+}
+
+.Navbar a {
+  margin: auto;
+}
+
+.Navbar img {
+  width: 50px;
+  transition: .4s ease;
+}
+
+.Navbar img:hover {
+  transform: rotate(-720deg) scale(1.2);
 }
 
 .navbarBtns {
   display: flex;
   justify-content: space-evenly;
   font-weight: bold;
+  font-size: larger;
+  padding: 20px 0px;
 }
 
-button div {
+.navbarBtns button div {
   border-bottom: 2px solid transparent;
 }
 
-button div:hover {
+.navbarBtns button div:hover {
   animation: active 0.3s ease forwards;
 }
 .active {

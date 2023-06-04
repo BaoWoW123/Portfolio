@@ -1,11 +1,222 @@
-
+import "../styles/Projects.css";
+import github from "../assets/logos/github.png";
 const Projects = () => {
-
-    return (
-        <div className="Projects">
-            Projects
-        </div>
-    )
-}
+  return (
+    <div className="Projects">
+      <ul className="projectsList">
+        <li className="project">
+          <h3>Itstagram</h3>
+          <p>
+            An Instagram clone with the essential features of the original
+            platform. Users can change their profile image, create posts as well
+            as comment on other posts. Users can create a new profile, login
+            with Google, or sign in with a test account.
+          </p>{" "}
+          <a href="https://instagramclone-f3e9c.web.app/">View App</a>
+          <ul>
+            <li>React</li>
+            <li>Google Firebase</li>
+            <li>Third-party libraries integration</li>
+            <li>Test driven development (TDD)</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Shop</h3>
+          <p>
+            A modern climbing e-commerce platform for users to purchase a
+            variety of products. The shop features a cart for users to check out
+            their personalized items as well as item catergories.
+          </p>
+          <a href="https://shop-bc80d.web.app/">View App</a>
+          <ul>
+            <li>TDD</li>
+            <li>React</li>
+            <li>React Router</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Knight Travails</h3>
+          <p>
+            An app that shows the shortest amount of moves it takes for a knight
+            from popular game Chess to move to a given square. The amount of
+            moves is indicated by a color transition rather than a numerical
+            value.
+          </p>{" "}
+          <a href="https://knight-travails.web.app/">View App</a>
+          <ul>
+            <li>
+              {" "}
+              Graph data structure & breadth-first search (BFS) algorithm
+            </li>
+            <li>2D Arrays</li>
+            <li>Object-oriented programming (OOP)</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Where's Waldo</h3>
+          <p>
+            A photo-tagging app based off of "Where's Waldo" game where the user
+            has to find a character in an image. After finding all three
+            characters, user has option to publish their time and view the
+            scoreboard.
+          </p>
+          <a href="https://whereswaldo-29041.web.app/">View App</a>
+          <ul>
+            <li>Google Firebase</li>
+            <li>NoSQL</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Battleship</h3>
+          <p>
+            A game of Battleship where the user hides a fleet of ships on a grid
+            from the opponent (computer). The user must destroy the opposing
+            ships before their own fleet is destroyed. Computer takes random
+            shots each turn.
+          </p>{" "}
+          <a href="https://battleship-93658.web.app/">View App</a>
+          <ul>
+            <li>OOP</li>
+            <li>2D Arrays</li>
+            <li>React</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Memory Card Game</h3>
+          <p>
+            A game where users have to click on all cards shown exactly once.
+            After each click, cards are shuffled and users have to continue
+            without clicking on a card previously clicked on. Characters are
+            from popular cartoon anime "Bleach".
+          </p>{" "}
+          <a href="https://memorycard-4cda5.web.app/">View App</a>
+          <ul>
+            <li>React Lifecycle Methods</li>
+            <li>React State Management</li>
+            <li></li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>CV/Resume Creator</h3>
+          <p>
+            Creates a resume when a user inputs their information into a form.
+            User can add multiple sections for each category such as work
+            experience, education, etc. User has option to print resume when
+            completed.
+          </p>{" "}
+          <a href="https://cv-app-8d5f4.web.app/">View App</a>
+          <ul>
+            <li>React Hooks</li>
+            <li>React Props</li>
+            <li>React State Management</li>
+            <li>Input Handling</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Restaurant Page</h3>
+          <p>
+            A restaurant webpage that displays their cuisine, address or
+            location, contacts and other relevant information. Uses vanilla
+            JavaScript & DOM manipulation to navigate pages.
+          </p>{" "}
+          <a href="https://restaurant-page-59a67.web.app/">View App</a>
+          <ul>
+            <li>Webpack</li>
+            <li>ES6 Modules</li>
+            <li>Document Object Model(DOM) Manipulation</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Weather Forecast</h3>
+          <p>
+            An app that shows a 3-day forecast of the weather using an API.
+            Users search up the weather by using their local city, state, postal
+            code, or even country.
+          </p>{" "}
+          <div></div>
+          <ul>
+            <li>API Data Fetching & Management</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Tic-Tac-Toe</h3>
+          <p>
+            A simple game of Tic-Tac-Toe where the user has to get three in a
+            row of their letter. After each game, player's turns alternate
+            allowing the opposing player to go first.
+          </p>
+          <div></div>
+          <ul>
+            <li>OOP</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Rock Paper Scissors</h3>
+          <p>
+            A game of rock, paper, scissors where the user plays against a
+            computer. Player that gets to five wins first wins the game.
+          </p>
+          <div></div>
+          <ul>
+            <li>JavaScript Basics</li>
+            <li>CSS Flexbox</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Etch-A-Sketch</h3>
+          <p>
+            An app that lets users draw on a customizable grid. Features various
+            modes; etch, erase, and off.
+          </p>
+          <div></div>
+          <ul>
+            <li>JavaScript Basics</li>
+            <li>HTML & CSS</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Calculator</h3>
+          <p>
+            A calculator that solves basic math problems with the fundamental
+            operators. The app stores the answer as the first operand and can be
+            followed up with the remaining operator and number.
+          </p>
+          <div></div>
+          <ul>
+            <li>JavaScript Basics</li>
+            <li>HTML & CSS</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Admin Dashboard</h3>
+          <p>
+            A non-interactive admin dashboard that shows a modern page layout
+            containing a navigation bar, body, header, etc.
+          </p>
+          <div></div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS Grid</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>Signup Form</h3>
+          <p>
+            A basic form page for users to fill out information and submit. App
+            uses common form related attributes such as fieldset, labels, input
+            types, etc.
+          </p>
+          <div></div>
+          <ul>
+            <li>HTML Attributes</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 export default Projects;
