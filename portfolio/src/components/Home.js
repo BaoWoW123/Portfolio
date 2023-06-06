@@ -18,17 +18,17 @@ import { useEffect } from "react";
 const Home = (props) => {
   useEffect(() => {
     const contact = document.querySelector(".contact");
-    const borderLines = document.querySelectorAll('.borderLine')
+    const borderLines = document.querySelectorAll(".borderLine");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            borderLines.forEach(el => {
-                el.className = 'borderLineActive'
-            })
+          borderLines.forEach((el) => {
+            el.className = "borderLineActive";
+          });
         } else {
-            borderLines.forEach(el => {
-                el.className = 'borderLine'
-            })
+          borderLines.forEach((el) => {
+            el.className = "borderLine";
+          });
         }
       });
     });
@@ -151,14 +151,14 @@ const Home = (props) => {
               </ul>
             </div>
             <div className="imgContainer">
-              <img src={imgArray[0]} alt='Instagram Clone 1'/>
-              <img src={imgArray[1]} alt='Instagram Clone 2'/>
+              <img src={imgArray[0]} alt="Instagram Clone 1" />
+              <img src={imgArray[1]} alt="Instagram Clone 2" />
             </div>
           </li>
           <li className="homeProject">
             <div className="imgContainer">
-              <img src={imgArray[2]} alt='Shop 1'/>
-              <img src={imgArray[3]} alt='Shop 2'/>
+              <img src={imgArray[2]} alt="Shop 1" />
+              <img src={imgArray[3]} alt="Shop 2" />
             </div>
             <div>
               <a href="https://shop-bc80d.web.app/">
@@ -198,14 +198,14 @@ const Home = (props) => {
               </ul>
             </div>
             <div className="imgContainer">
-              <img src={imgArray[4]} alt='Knight Travails 1'/>
-              <img src={imgArray[5]} alt='Knight Travails 2'/>
+              <img src={imgArray[4]} alt="Knight Travails 1" />
+              <img src={imgArray[5]} alt="Knight Travails 2" />
             </div>
           </li>
           <li className="homeProject">
             <div className="imgContainer">
-              <img src={imgArray[6]} alt="Where's Waldo 1"/>
-              <img src={imgArray[7]} alt="Where's Waldo 2"/>
+              <img src={imgArray[6]} alt="Where's Waldo 1" />
+              <img src={imgArray[7]} alt="Where's Waldo 2" />
             </div>
             <div>
               <a href="https://whereswaldo-29041.web.app/">
@@ -230,16 +230,18 @@ const Home = (props) => {
         </ul>
       </div>
       <div className="contact">
-        <h1><span>Contact</span></h1>
+        <h1>
+          <span>Contact</span>
+        </h1>
         <form>
-        <div>Need to reach me or have a question? Feel free to message me!</div>
-        <div style={{display:'flex',gap:'40px', width:'50%'}}>
+          <div>
+            Need to reach me or have a question? Feel free to message me!
+          </div>
+          <div style={{ display: "flex", gap: "40px", width: "50%" }}>
             <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Contact Info" /></div>
-          <textarea
-            maxLength={400}
-            placeholder='Write a message...'
-          ></textarea>
+            <input type="text" placeholder="Contact Info" />
+          </div>
+          <textarea maxLength={400} placeholder="Write a message..."></textarea>
           <button type="button" className="contactBtn">
             Send message
             <div></div>
@@ -257,8 +259,4 @@ const Home = (props) => {
 
 export default Home;
 
-
-
-        <form className="contactForm">
-          
-        </form>
+<form className="contactForm"></form>;

@@ -456,7 +456,63 @@ form textarea {
     }
 }
 @media screen and (max-width: 1080px) {
+    h1,h2,h3{
+        font-size: 30px;
+    }
+    .Navbar a img {
+        width: 30px;
+    }
+    .navbarBtns button {
+        font-size: 15px;
+    }
+    .homeMain {
+        height: auto;
+        gap: 10px;
+    }
+    .homeTitle {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .homeTitle img {
+        width: 200px;
+    }
+    .introWrapper {
+        font-size: 14px;
+    }
+    .about div p{
+        font-size: 15px;
+    }
     .skillSet {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .skillSet li {
+        flex-grow: 1;
+    }
+    .skillSet li img {
+        width: 100px;
+    }
+    .homeContent {
+        margin: auto;
+    }
+    .projects {
+        padding: 0;
+    }
+    .homeProject {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .contact {
+        font-size: 15px;
+        width: 95%;
+    }
+    form input, form textarea {
+        width: 80%;
+        font-size: 10px;
+        padding: 3px;
     }
 }

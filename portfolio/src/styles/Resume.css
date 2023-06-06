@@ -1,0 +1,21 @@
+.Resume {
+display: flex;
+justify-content: center;
+gap: 20px;
+height: 90vh;
+box-sizing: border-box;
+padding: 20px 0px;
+}
+
+.Resume div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    width: 850px;
+}
+.Resume iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}

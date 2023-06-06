@@ -33,6 +33,11 @@
     transition: .2s ease;
     font-weight: bold;
 }
+
+.project h3 div {
+    font-weight: normal;
+    font-size: smaller;
+}
 .Projects img {
     width: 50px;
     padding: 20px;
@@ -48,10 +53,17 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .projectsList {
-        grid-template-columns: repeat(2, 1fr);
+    .project h3 {
+        font-size: 20px;
     }
     .project {
-        grid-template-rows: 40px 400px 30px;
+        grid-template-rows: 30px auto 30px;
+        font-size: 15px;
+    }
+    .projectsList {
+        grid-template-columns: 1fr;
+    }
+    .project ul {
+        font-size: 12px;
     }
 }
