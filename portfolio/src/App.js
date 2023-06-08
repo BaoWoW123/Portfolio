@@ -23,7 +23,7 @@ function App() {
     let btn = e.target;
     const active = document.querySelectorAll(".active");
 
-    if (!e) btn = document.querySelector(".navbarBtns").children[2]; //static route projects
+    if (!e) btn = document.querySelector(".navbarBtns").children[1]; //static route projects
     active.forEach((el) => (el.className = ""));
     document.querySelector(".progress").style.width = "0%";
     document.body.scrollTop = 0;

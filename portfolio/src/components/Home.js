@@ -13,11 +13,11 @@ import css from "../assets/logos/css.png";
 import firebase from "../assets/logos/firebase.png";
 import avatar from "../assets/avatar.png";
 import imgArray from "./images";
+import Contact from "./Contact";
 import { useEffect } from "react";
-
 const Home = (props) => {
   useEffect(() => {
-    const contact = document.querySelector(".contact");
+    const contact = document.querySelector(".Contact");
     const borderLines = document.querySelectorAll(".borderLine");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -32,10 +32,8 @@ const Home = (props) => {
         }
       });
     });
-
     observer.observe(contact);
   }, []);
-
   return (
     <div className="Home">
       <div className="homeMain">
@@ -150,13 +148,23 @@ const Home = (props) => {
                 <li>Test driven development (TDD)</li>
               </ul>
             </div>
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={() =>
+                (window.location.href = "https://instagramclone-f3e9c.web.app/")
+              }
+            >
               <img src={imgArray[0]} alt="Instagram Clone 1" />
               <img src={imgArray[1]} alt="Instagram Clone 2" />
             </div>
           </li>
           <li className="homeProject">
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={() =>
+                (window.location.href = "https://shop-bc80d.web.app/")
+              }
+            >
               <img src={imgArray[2]} alt="Shop 1" />
               <img src={imgArray[3]} alt="Shop 2" />
             </div>
@@ -197,13 +205,23 @@ const Home = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={() =>
+                (window.location.href = "https://knight-travails.web.app/")
+              }
+            >
               <img src={imgArray[4]} alt="Knight Travails 1" />
               <img src={imgArray[5]} alt="Knight Travails 2" />
             </div>
           </li>
           <li className="homeProject">
-            <div className="imgContainer">
+            <div
+              className="imgContainer"
+              onClick={() =>
+                (window.location.href = "https://whereswaldo-29041.web.app/")
+              }
+            >
               <img src={imgArray[6]} alt="Where's Waldo 1" />
               <img src={imgArray[7]} alt="Where's Waldo 2" />
             </div>
@@ -229,30 +247,7 @@ const Home = (props) => {
           </button>
         </ul>
       </div>
-      <div className="contact">
-        <h1>
-          <span>Contact</span>
-        </h1>
-        <form>
-          <div>
-            Need to reach me or have a question? Feel free to message me!
-          </div>
-          <div style={{ display: "flex", gap: "40px", width: "50%" }}>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Contact Info" />
-          </div>
-          <textarea maxLength={400} placeholder="Write a message..."></textarea>
-          <button type="button" className="contactBtn">
-            Send message
-            <div></div>
-          </button>
-        </form>
-        <span className="borderLine"></span>
-        <span className="borderLine"></span>
-        <span className="borderLine"></span>
-        <span className="borderLine"></span>
-        <span className="borderLine"></span>
-      </div>
+      <Contact />
     </div>
   );
 };

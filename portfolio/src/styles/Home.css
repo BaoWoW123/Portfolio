@@ -1,518 +1,381 @@
 .Home {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-    gap: 50px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  gap: 50px;
+  position: relative;
 }
 
-.homeMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 85vh;
-    gap: 10vh;
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 85vh;
+  gap: 10vh;
 }
 
 .homeTitle {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
 }
-.homeTitle h1{
-    opacity: 0;
-    animation: float 1s ease 1.3s forwards;
+.homeTitle h1 {
+  opacity: 0;
+  animation: float 1s ease 1.3s forwards;
 }
 .homeTitle div {
-    background-color: #9180c3;
-    display: flex;
-    border-radius: 50%;
-    animation: scaleAppear 1s ease-out .3s forwards;
-    transform: scale(0);
-    overflow: hidden;
+  background-color: #9180c3;
+  display: flex;
+  border-radius: 50%;
+  animation: scaleAppear 1s ease-out 0.3s forwards;
+  transform: scale(0);
+  overflow: hidden;
 }
-.homeTitle img{
-    animation: imgPopup .8s ease-in-out 1s forwards;
-    width: 20vw;
-    border-radius: 50%;
-    transform: translateY(100%);
+.homeTitle img {
+  animation: imgPopup 0.8s ease-in-out 1s forwards;
+  width: 20vw;
+  border-radius: 50%;
+  transform: translateY(100%);
 }
 
-.introWrapper {    
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    position: relative;
+.introWrapper {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  position: relative;
 }
 
 .introPara {
-    animation: appear .4s  ease-out 3s forwards;
-    border: 5px solid transparent;
-    text-align: center;
-    background-color: transparent;
-    color: transparent;
-    padding: 10px;
+  animation: appear 0.4s ease-out 3s forwards;
+  border: 5px solid transparent;
+  text-align: center;
+  background-color: transparent;
+  color: transparent;
+  padding: 10px;
 }
 
 .line {
-    position: absolute;
-    box-sizing: border-box;
+  position: absolute;
+  box-sizing: border-box;
 }
 
-.line:nth-child(5) { 
-    width: 0;
-    left: 0;
-    height: 100%;
-    border-top: 1px solid black;
-    animation: createBorderX .5s ease-out 1.5s forwards;    
+.line:nth-child(5) {
+  width: 0;
+  left: 0;
+  height: 100%;
+  border-top: 1px solid black;
+  animation: createBorderX 0.5s ease-out 1.5s forwards;
 }
 
 .line:nth-child(2) {
-    width: 100%;
-    height: 0;
-    border-right: 1px solid black;
-    animation: createBorderY .5s ease-out 1.95s forwards;
+  width: 100%;
+  height: 0;
+  border-right: 1px solid black;
+  animation: createBorderY 0.5s ease-out 1.95s forwards;
 }
- 
+
 .line:nth-child(3) {
-    width: 0;
-    right: 0;
-    height: 100%;
-    border-bottom: 1px solid black;
-    animation: createBorderX .5s ease-out 2.35s forwards;
+  width: 0;
+  right: 0;
+  height: 100%;
+  border-bottom: 1px solid black;
+  animation: createBorderX 0.5s ease-out 2.35s forwards;
 }
 .line:nth-child(4) {
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    border-left: 1px solid black;
-    animation: createBorderY .5s ease-out 2.8s forwards;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  border-left: 1px solid black;
+  animation: createBorderY 0.5s ease-out 2.8s forwards;
 }
 
 .homeContent {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-self: center;
-    width:95%;
-    padding: 20px;
-    box-shadow: inset 0 1px 5px gray;
-    border-radius: 3px;
-    box-sizing: border-box;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-self: center;
+  width: 95%;
+  padding: 20px;
+  box-shadow: inset 0 1px 5px gray;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
 }
 
 .homeContent h1 {
-    grid-column: 1/4;
-
+  grid-column: 1/4;
 }
 
 .about {
- display:flex;
- flex-direction: column;
- width: 80%;
- padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 10px;
 }
 
 .about div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .about div p {
-    grid-column: 1/2;
-    font-size: 20px;
-    line-height: 1.5;
+  grid-column: 1/2;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .skillSet {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: black;
-    gap: 10px;   
-    padding: 10px;
-    border-radius: 10px;
-    grid-column: 2/3;
-    margin: auto;
-    width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: black;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  grid-column: 2/3;
+  margin: auto;
+  width: 80%;
 }
 
 .skillSet > * {
-    display: flex;
-    background-color:white;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin:0;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .skillSet li {
-    display: grid;
-    padding: 5px;
-    font-size: 20px;
-    grid-template-rows: 3fr 1fr;
+  display: grid;
+  padding: 5px;
+  font-size: 20px;
+  grid-template-rows: 3fr 1fr;
 }
 
 .skillSet li img {
-    width: 3vw;
-    margin: auto;
+  width: 3vw;
+  margin: auto;
 }
 
 .projects {
-    display: grid;
-    grid-template-rows: 100px repeat(4, 1fr) 50px ;
-    grid-column: 1/4;
-    grid-row: 2/4;
-    padding: 30px 10vw;
-    gap: 3vh;
+  display: grid;
+  grid-template-rows: 100px repeat(4, 1fr) 50px;
+  grid-column: 1/4;
+  grid-row: 2/4;
+  padding: 30px 10vw;
+  gap: 3vh;
 }
 
-.projects h1, .homeProject {
-    grid-column: 1/3;
-    border-bottom: 1px solid #9180c3;
+.projects h1,
+.homeProject {
+  grid-column: 1/3;
+  border-bottom: 1px solid #9180c3;
 }
 .homeProject {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 3vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 3vh;
 }
- 
+
 .homeProject div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .homeProject div p {
-    padding: 0px 3vw;
-    flex-grow: 1;
+  padding: 0px 3vw;
+  flex-grow: 1;
 }
 
 .homeProject ul {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .imgContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35vh;
-    background-color: #9180c3;
-    overflow: hidden;
-    width: 80%;
-    margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  background-color: #9180c3;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
 }
 
 .imgContainer img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: opacity .1s ease;
-    position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.1s ease;
+  position: absolute;
 }
 
 .imgContainer img:nth-child(2) {
-    animation: imgLoop 4s ease-in-out infinite alternate;
+  animation: imgLoop 4s ease-in-out infinite alternate;
 }
 
 .projects p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .homeProject a {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-.homeProject a h3, .projects button, .contactBtn {
-    opacity: .8;
-    transition: .1s ease-out;
+.homeProject a h3,
+.projects button {
+  opacity: 0.8;
+  transition: 0.1s ease-out;
 }
 
-.homeProject a h3:hover, .projects button:hover, .contactBtn:hover{
-    transform: scale(1.1);
-    opacity: 1;
-    cursor: pointer;
+.homeProject a h3:hover,
+.projects button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  cursor: pointer;
 }
 
 .projects button {
-    display: flex;
-    background-color: #9180c3;
-    color: white;
-    padding: 1vh 1vw;
-    border-radius: 10px;
-    grid-column: 1/3;
-    margin: auto;
+  display: flex;
+  background-color: #9180c3;
+  color: white;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  grid-column: 1/3;
+  margin: auto;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    box-sizing: border-box;
-    position: relative;
-    width: 60%;
-    padding: 20px 0px;
-    align-self: center;
-    text-align: center;
-}
-.contact form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    gap: 20px;
-}
-
-form input, form textarea {
-    width: 50%;
-    font-size: 25px;
-    font-family: inherit;
-    box-sizing: border-box;
-    transition: .3s;
-}
-
-form input:focus, textarea:focus {
-    transform: scale(1.1);
-}
-
-form input {
-    padding:10px;
-}
-
-form textarea {
-    height: 10vh;
-    resize: none;
-    padding: 10px;
-}
-.contactBtn {
-    padding: 10px 20px;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.contactBtn div {
-    z-index: -1;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.contactBtn:hover div {
-    animation: bgColorSlide 1s ease forwards;
-}
-
-.contactBtn:hover {
-    color: white;
-}
-
-.borderLineActive {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    transform-origin: center;
-}
-/* top */
-.borderLineActive:nth-child(3) { 
-    transform: scale(0);
-    top:0;
-    border-top: 3px solid black;
-    animation: expandFromCenter .8s ease-out forwards;
-}
- /* left*/
-.borderLineActive:nth-child(4) {
-    height: 0;
-    top: 0;
-    border-left: 3px solid black;
-    animation: createBorderY .4s ease-out .8s forwards;
-}
- /*botR*/
-.borderLineActive:nth-child(5) {
-    bottom: 0;
-    right: 0;
-    width: 0%;
-    border-bottom: 3px solid black;
-    animation: createBorderX 2s ease-out 1.2s forwards;
-}
- /*botL*/
-.borderLineActive:nth-child(7) {
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 3px solid black;
-    animation: createBorderX 2s ease-out 1.2s forwards;
-}
- /*right*/
-.borderLineActive:nth-child(6) {
-    top: 0;
-    height: 0;
-    border-right: 3px solid black;
-    animation: createBorderY .4s ease-out .8s forwards;
-}
-
-@keyframes expandFromCenter {
-    from {
-        width: 0%;
-    }
-    to {
-        transform: scale(1);
-    }
-}
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes appear {
-    from {
-        transform: translateY(5%);
-    }
-    to {
-        color:inherit;
-        background-color: inherit;
-        transform: translateY(0%);
-    }
+  from {
+    transform: translateY(5%);
+  }
+  to {
+    color: inherit;
+    background-color: inherit;
+    transform: translateY(0%);
+  }
 }
 @keyframes float {
-    0% {
-        transform: translateY(20%);
-    } 50% {
-        opacity: 0;
-    }
-     100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 @keyframes createBorderX {
-    to {
-        width: 100%;
-    }
+  to {
+    width: 100%;
+  }
 }
+
 @keyframes createBorderY {
-    to {
-        height: 100%;
-    }    
+  to {
+    height: 100%;
+  }
 }
 
 @keyframes imgPopup {
-    to {
-        transform: translateY(0%);
-    }
+  to {
+    transform: translateY(0%);
+  }
 }
 @keyframes scaleAppear {
-    from {
-        transform: scale(0);
-    } 70% {
-        transform: scale(1.1);
-    } 
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes imgLoop {
-    0% {
-        opacity: 1;
-    } 25% {
-        opacity: 1;
-    } 75% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes bgColorSlide {
-    0% {
-        background-color: #9180c3;
-
-        transform: translateX(-110%) skew(45deg); 
-        padding-left: 100px;
-    } 
-    95% {
-        transform: translate(-15%) skew(45deg);
-        padding-left: 100px;
-        background-color: #9180c3;
-    } 100% {
-        background-color: #9180c3;
-    }
-}
 @media screen and (max-width: 1080px) {
-    h1,h2,h3{
-        font-size: 30px;
-    }
-    .Navbar a img {
-        width: 30px;
-    }
-    .navbarBtns button {
-        font-size: 15px;
-    }
-    .homeMain {
-        height: auto;
-        gap: 10px;
-    }
-    .homeTitle {
-        flex-direction: column;
-        padding-top: 50px;
-    }
-    .homeTitle img {
-        width: 200px;
-    }
-    .introWrapper {
-        font-size: 14px;
-    }
-    .about div p{
-        font-size: 15px;
-    }
-    .skillSet {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .skillSet li {
-        flex-grow: 1;
-    }
-    .skillSet li img {
-        width: 100px;
-    }
-    .homeContent {
-        margin: auto;
-    }
-    .projects {
-        padding: 0;
-    }
-    .homeProject {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-    .contact {
-        font-size: 15px;
-        width: 95%;
-    }
-    form input, form textarea {
-        width: 80%;
-        font-size: 10px;
-        padding: 3px;
-    }
+  h1,
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+  .Navbar a img {
+    width: 30px;
+  }
+  .navbarBtns button {
+    font-size: 15px;
+  }
+  .homeMain {
+    height: auto;
+    gap: 10px;
+  }
+  .homeTitle {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .homeTitle img {
+    width: 200px;
+  }
+  .introWrapper {
+    font-size: 14px;
+  }
+  .about div p {
+    font-size: 15px;
+  }
+  .skillSet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skillSet li {
+    flex-grow: 1;
+  }
+  .skillSet li img {
+    width: 100px;
+  }
+  .homeContent {
+    margin: auto;
+  }
+  .projects {
+    padding: 0;
+  }
+  .homeProject {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }

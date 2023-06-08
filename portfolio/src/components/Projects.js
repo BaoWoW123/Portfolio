@@ -109,6 +109,7 @@ const Projects = () => {
           <ul>
             <li>OOP</li>
             <li>2D Arrays</li>
+            <li>Babel</li>
             <li>React</li>
           </ul>
         </li>
@@ -135,17 +136,33 @@ const Projects = () => {
         </li>
         <li className="project">
           <h3>
-            Weather Forecast
+            Weather API
             <div>Dec 2022 - Dec 2022</div>
           </h3>
           <p>
             An app that shows a 3-day forecast of the weather using an API.
-            Users search up the weather by using their local city, state, postal
-            code, or even country.
+            Users can search up the weather by using their local city, state,
+            postal code, or country.
           </p>{" "}
-          <div></div>
+          <a href="https://weather-app-59fb5.web.app/">View App</a>
           <ul>
             <li>API Data Fetching & Management</li>
+          </ul>
+        </li>
+        <li className="project">
+          <h3>
+            Assignments
+            <div>Dec 2022 - Dec 2022</div>
+          </h3>
+          <p>
+            Created common data structures and algorithms such as linked list,
+            binary tree, to merge sort. Also implemented common methods and
+            traversals to each data structure.
+          </p>
+          <a href="https://github.com/BaoWoW123/Assignments">View Code</a>
+          <ul>
+            <li>Data structures and algorithms</li>
+            <li>JavaScript</li>
           </ul>
         </li>
         <li className="project">
@@ -175,7 +192,7 @@ const Projects = () => {
             row of their letter. After each game, player's turns alternate
             allowing the opposing player to go first.
           </p>
-          <div></div>
+          <a href="https://tic-tac-toe-40b13.web.app">View App</a>
           <ul>
             <li>OOP</li>
             <li>JavaScript</li>
@@ -191,7 +208,7 @@ const Projects = () => {
             operators. The app stores the answer as the first operand and can be
             followed up with the remaining operator and number.
           </p>
-          <div></div>
+          <a href="https://calculator-6fb2c.web.app">View App</a>
           <ul>
             <li>JavaScript Basics</li>
             <li>HTML & CSS</li>
@@ -206,7 +223,7 @@ const Projects = () => {
             A non-interactive admin dashboard that shows a modern page layout
             containing a navigation bar, body, header, etc.
           </p>
-          <div></div>
+          <a href="https://admin-dashboard-2f01d.web.app">View App</a>
           <ul>
             <li>HTML</li>
             <li>CSS Grid</li>
@@ -222,9 +239,9 @@ const Projects = () => {
             uses common form related attributes such as fieldset, labels, input
             types, etc.
           </p>
-          <div></div>
+          <a href="https://signup-form-469ed.web.app">View App</a>
           <ul>
-            <li>HTML Attributes</li>
+            <li>HTML Form Attributes</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
@@ -238,25 +255,11 @@ const Projects = () => {
             An app that lets users draw on a customizable grid. Features various
             modes; etch, erase, and off.
           </p>
-          <div></div>
+          <a href="https://etch-a-sketch-d1b6d.web.app">View App</a>
           <ul>
-            <li>JavaScript Basics</li>
-            <li>HTML & CSS</li>
-          </ul>
-        </li>
-        <li className="project">
-          <h3>
-            Rock Paper Scissors
-            <div>Jul 2022 - Jul 2022</div>
-          </h3>
-          <p>
-            A game of rock, paper, scissors where the user plays against a
-            computer. Player that gets to five wins first wins the game.
-          </p>
-          <div></div>
-          <ul>
-            <li>JavaScript Basics</li>
+            <li>HTML</li>
             <li>CSS Flexbox</li>
+            <li>JavaScript Basics</li>
           </ul>
         </li>
       </ul>

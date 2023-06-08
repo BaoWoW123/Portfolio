@@ -10,9 +10,6 @@ const Navbar = (props) => {
         <button type="button" onClick={(e) => props.reroute(e, "home")}>
           <div>Home</div>
         </button>
-        <button type="button" onClick={(e) => props.reroute(e, "about")}>
-          <div>About</div>
-        </button>
         <button type="button" onClick={(e) => props.reroute(e, "projects")}>
           <div>Projects</div>
         </button>

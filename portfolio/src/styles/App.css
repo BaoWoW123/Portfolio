@@ -1,50 +1,49 @@
-html,body {
-    color: black;
-    font-size: 30px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: auto;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    background: linear-gradient(to top left, #eeeae7, #9180c3);
-    background-attachment: fixed;
+html,
+body {
+  color: black;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to top left, #eeeae7, #9180c3);
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
-    display:none;
+  display: none;
 }
 a {
-    text-decoration: inherit;
-    color: none;
-    display: inline-block;
+  text-decoration: inherit;
+  color: none;
+  display: inline-block;
 }
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
-h1, h2,h3 {
-    margin: 0;
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 ul {
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
 }
 
 button {
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    padding: 0px;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 0px;
 }
 
 .App {
-
 }
-
-
-
