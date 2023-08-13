@@ -1,9 +1,9 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
+import Blog from "./components/Blog";
 import "./styles/App.css";
 
 function App() {
@@ -37,9 +37,9 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home reroute={navBtnEvent} />} />
         <Route path="/home" element={<Home reroute={navBtnEvent} />} />
-        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );

@@ -1,16 +1,5 @@
 import "../styles/Home.css";
-import react from "../assets/logos/react.png";
-import js from "../assets/logos/js.png";
-import jest from "../assets/logos/jest.png";
-import git from "../assets/logos/git.png";
-import router from "../assets/logos/router.png";
-import github from "../assets/logos/github.png";
-import webpack from "../assets/logos/webpack.png";
-import npm from "../assets/logos/npm.png";
-import tailwind from "../assets/logos/tailwind.png";
-import html from "../assets/logos/html.png";
-import css from "../assets/logos/css.png";
-import firebase from "../assets/logos/firebase.png";
+import {react,js,jest,git,router,github,webpack,npm,tailwind,html,css,firebase, mongo, node, express, jwt, expo, pug} from "../assets/logos/logos";
 import avatar from "../assets/avatar.png";
 import imgArray from "./images";
 import Contact from "./Contact";
@@ -41,13 +30,13 @@ const Home = (props) => {
           <div>
             <img src={avatar} />
           </div>
-          <h1>Welcome!</h1>
+          <h1 className="nameTitle">Bao Nguyen</h1>
         </div>
         <div className="introWrapper">
           <div className="introPara">
-            I'm Bao Nguyen, an aspiring software developer from Sacramento,
-            California. I am excited to create innovative and dynamic apps that
-            engage my users. Whether if it's a custom e-commerce platform,
+            Hello! I'm a software developer from Sacramento,
+            California, excited to create innovative and dynamic apps that
+            engage my users. Whether it's a custom e-commerce platform,
             responsive website, or anything similar, I'm here to bring that
             vision to life. So take a look around and get to know me and my
             work. Let's start building something amazing together!
@@ -63,7 +52,7 @@ const Home = (props) => {
           <h1>About Me</h1>
           <div>
             <p>
-              Hello! I'm a health science graduate who has transitioned into
+              I'm a health science graduate who has transitioned into
               software development. I believe software development is one of the
               most impactful ways to improve people's lives. My health science
               background has given me a different view on designing apps for the
@@ -75,34 +64,66 @@ const Home = (props) => {
               to software development. I hope to grow and continue learning in
               this amazing field!
             </p>
+            <h1>Tech Stack</h1>
             <ul className="skillSet">
               <li>
+                <img src={mongo} />
+                MongoDB
+              </li>
+              <li>
+                <img src={express} />
+                Express
+              </li>
+              <li>
                 <img src={react} />
-                REACT
+                React/React Native
+              </li>
+              <li>
+                <img src={node} />
+                Node
               </li>
               <li>
                 <img src={js} />
-                JAVASCRIPT
+                JavaScript
+              </li>
+              <li>
+                <img src={firebase} />
+                Firebase
+              </li>
+            </ul>
+            <h1>Toolset</h1>
+            <ul className="skillSet">
+              <li>
+                <img src={expo} />
+                Expo
+              </li>
+              <li>
+                <img src={pug} />
+                Pug
+              </li>
+              <li>
+                <img src={jwt} />
+                JSON Web Token
               </li>
               <li>
                 <img src={router} />
-                ROUTER
+                React Router
               </li>
               <li>
                 <img src={jest} />
-                JEST
+                Jest
               </li>
               <li>
                 <img src={git} />
-                GIT
+                Git
               </li>
               <li>
                 <img src={github} />
-                GITHUB
+                Github
               </li>
               <li>
                 <img src={webpack} />
-                WEBPACK
+                Webpack
               </li>
               <li>
                 <img src={npm} />
@@ -110,7 +131,7 @@ const Home = (props) => {
               </li>
               <li>
                 <img src={tailwind} />
-                TAILWIND
+                Tailwind
               </li>
               <li>
                 <img src={html} />
@@ -119,10 +140,6 @@ const Home = (props) => {
               <li>
                 <img src={css} />
                 CSS
-              </li>
-              <li>
-                <img src={firebase} />
-                FIREBASE
               </li>
             </ul>
           </div>
@@ -253,5 +270,3 @@ const Home = (props) => {
 };
 
 export default Home;
-
-<form className="contactForm"></form>;
