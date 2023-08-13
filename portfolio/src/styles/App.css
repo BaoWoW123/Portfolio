@@ -19,6 +19,9 @@ a {
   color: none;
   display: inline-block;
 }
+a:hover {
+  cursor: pointer;
+}
 a:visited {
   color: inherit;
 }

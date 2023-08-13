@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home reroute={navBtnEvent} />} />
         <Route path="/home" element={<Home reroute={navBtnEvent} />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects navigate={navigate}/>} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>

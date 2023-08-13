@@ -1,0 +1,27 @@
+.Blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:100px;
+    padding: 0px 100px;
+}
+
+.blog div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-indent: 100px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 6px solid white;
+    border-left: 3px solid white;
+}

@@ -16,26 +16,31 @@ import {
   pug,
   passport,
   jwt,
-  expo
+  expo,
 } from "../assets/logos/logos.js";
-const Projects = () => {
+const Projects = ({ navigate }) => {
   return (
     <div className="Projects">
-      <h1 style={{padding:'20px'}}>Projects</h1>
+      <h1 style={{ padding: "20px" }}>Projects</h1>
       <ul className="projectsList">
-      <li className="project">
+        <li className="project">
           <h3>
             Climbing Tracker
             <div>Jun 2023 - Current</div>
           </h3>
           <p>
-            A mobile app for climbers of all levels to track their climbing and discover ways to improve their progress. 
-            Developed from my passion for the sport.
+            A mobile app for climbers of all levels to track their climbing and
+            discover ways to improve their progress. Developed from my passion
+            for the sport.
           </p>
-          <a href="https://github.com/BaoWoW123/Climbing-Tracker" target={"_blank"}>
-            View Code</a>
+          <a
+            href="https://github.com/BaoWoW123/Climbing-Tracker"
+            target={"_blank"}
+          >
+            View Code
+          </a>
           <ul>
-          <li>
+            <li>
               <img src={react} />
               <div className="imgName">React Native</div>
             </li>
@@ -49,20 +54,37 @@ const Projects = () => {
             <span>Third Party Libraries Implementation</span>
           </div>
         </li>
-      <li className="project">
+        <li className="project">
           <h3>
             Blog API
             <div> Jul 2023 - Aug 2023</div>
           </h3>
           <p>
-            An API for authorized users to create blog posts.
-            Blog site is separated from API.
-            The blogs can be fetched into another app using route "/posts" with the API url.
+            An API built on the backend that enables authorized users to
+            write blog posts and functions as a data-fetching endpoint. The
+            frontend application operates independently from the backend, and
+            the blog content is retrieved by a distinct app through the "/posts"
+            route utilizing the API URL.
           </p>
-          <a href="https://sparkling-snowflake-3789.fly.dev/" target={"_blank"}>
-            View API</a>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              fontSize: "inherit",
+            }}
+          >
+            <a
+              href="https://sparkling-snowflake-3789.fly.dev/"
+              target={"_blank"}
+            >
+              View API
+            </a>
+
+            <a onClick={() => navigate(`/blog`)}>View Blog</a>
+          </div>
           <ul>
-          <li>
+            <li>
               <img src={express} />
               <div className="imgName">Express.js</div>
             </li>
@@ -80,22 +102,25 @@ const Projects = () => {
             </li>
           </ul>
           <div>
-            <span>Separate Backend {"&"} Frontend (API {'&'} blog site)</span>
+            <span>
+              Separate Backend {"&"} Frontend (API {"&"} blog site)
+            </span>
             <span>REST APIs Development</span>
           </div>
         </li>
-      <li className="project">
+        <li className="project">
           <h3>
             Members Only
             <div>Jul 2023 - Aug 2023</div>
           </h3>
           <p>
-            A public message board where users can read posts.
-            Signing up allows users to create posts. 
-            Normal users can become authorized users which have the privilege of seeing the authors by solving a riddle.
+            A public message board where users can read posts. Signing up allows
+            users to create posts. Normal users can become authorized users
+            which have the privilege of seeing the authors by solving a riddle.
           </p>
           <a href="https://github.com/BaoWoW123/Members-Only" target={"_blank"}>
-            View Code</a>
+            View Code
+          </a>
           <ul>
             <li>
               <img src={express} />
@@ -119,18 +144,21 @@ const Projects = () => {
             <span>MongoDB Management</span>
           </div>
         </li>
-      <li className="project">
+        <li className="project">
           <h3>
             Inventory Manager
             <div> Jul 2023 - Jul 2023</div>
           </h3>
           <p>
-            A CRUD-focused app for users to manage a car inventory. 
-            Users can create cars of various makes, models, years, and body types.
-            
+            A CRUD-focused app for users to manage a car inventory. Users can
+            create cars of various makes, models, years, and body types.
           </p>
-          <a href="https://github.com/BaoWoW123/Inventory-Manager" target={"_blank"}>
-            View Code</a>
+          <a
+            href="https://github.com/BaoWoW123/Inventory-Manager"
+            target={"_blank"}
+          >
+            View Code
+          </a>
           <ul>
             <li>
               <img src={express} />
@@ -166,7 +194,8 @@ const Projects = () => {
             with Google, or sign in with a test account.
           </p>{" "}
           <a href="https://instagramclone-f3e9c.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -198,7 +227,8 @@ const Projects = () => {
             scoreboard.
           </p>
           <a href="https://whereswaldo-29041.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -229,7 +259,8 @@ const Projects = () => {
             their personalized items as well as item catergories.
           </p>
           <a href="https://shop-bc80d.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -261,7 +292,8 @@ const Projects = () => {
             from popular cartoon anime "Bleach".
           </p>{" "}
           <a href="https://memorycard-4cda5.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -289,7 +321,8 @@ const Projects = () => {
             completed.
           </p>{" "}
           <a href="https://cv-app-8d5f4.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -318,7 +351,8 @@ const Projects = () => {
             shots each turn.
           </p>{" "}
           <a href="https://battleship-93658.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -351,7 +385,8 @@ const Projects = () => {
             value.
           </p>{" "}
           <a href="https://knight-travails.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={react} />
@@ -381,7 +416,8 @@ const Projects = () => {
             postal code, or country.
           </p>{" "}
           <a href="https://weather-app-59fb5.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={js} />
@@ -412,7 +448,8 @@ const Projects = () => {
             traversals to each data structure.
           </p>
           <a href="https://github.com/BaoWoW123/Assignments" target={"_blank"}>
-            View Code</a>
+            View Code
+          </a>
           <ul>
             <li>
               <img src={js} />
@@ -420,7 +457,7 @@ const Projects = () => {
             </li>
           </ul>
           <div>
-            <span>Data Structures {'&'} Algorithms</span>
+            <span>Data Structures {"&"} Algorithms</span>
             <span>Technical Skill Development</span>
           </div>
         </li>
@@ -432,10 +469,11 @@ const Projects = () => {
           <p>
             A restaurant webpage that displays their cuisine, address or
             location, contacts and other relevant information. Uses vanilla
-            JavaScript {'&'} DOM manipulation to navigate pages.
+            JavaScript {"&"} DOM manipulation to navigate pages.
           </p>{" "}
           <a href="https://restaurant-page-59a67.web.app/" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={webpack} />
@@ -466,7 +504,8 @@ const Projects = () => {
             allowing the opposing player to go first.
           </p>
           <a href="https://tic-tac-toe-40b13.web.app" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={js} />
@@ -497,7 +536,8 @@ const Projects = () => {
             followed up with the remaining operator and number.
           </p>
           <a href="https://calculator-6fb2c.web.app" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={js} />
@@ -527,7 +567,8 @@ const Projects = () => {
             containing a navigation bar, body, header, etc.
           </p>
           <a href="https://admin-dashboard-2f01d.web.app" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={html} />
@@ -554,7 +595,8 @@ const Projects = () => {
             types, etc.
           </p>
           <a href="https://signup-form-469ed.web.app" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
               <img src={js} />
@@ -585,22 +627,23 @@ const Projects = () => {
             modes; etch, erase, and off.
           </p>
           <a href="https://etch-a-sketch-d1b6d.web.app" target={"_blank"}>
-            View App</a>
+            View App
+          </a>
           <ul>
             <li>
-              <img src={js}/>
+              <img src={js} />
               <div className="imgName">JavaScript</div>
-            </li>  
+            </li>
             <li>
-              <img src={html}/>
+              <img src={html} />
               <div className="imgName">HTML</div>
-            </li>  
+            </li>
             <li>
-              <img src={css}/>
+              <img src={css} />
               <div className="imgName">CSS</div>
-            </li>  
+            </li>
           </ul>
-            <div>
+          <div>
             <span>HTML</span>
             <span>CSS Flexbox</span>
             <span>JavaScript Basics</span>
